@@ -1,0 +1,11 @@
+
+Apple:
+  key-id: 'AuthKey_PLS38L38PA.p8'
+  key-path: 'static/AuthKey_PLS38L38PA.p8'
+  key-teamId: 'MATB3B5A6S'
+  aud: 'com.connectly.luxury'
+  iss: 'https//appleid.apple.com'
+  websiteUrl: 'Website URLs'
+  publicKeyUrl: 'https://appleid.apple.com/auth/keys'
+  authTokenUrl: 'https://appleid.apple.com/auth/token'
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+<div id="appleid-signin" data-color="black" data-border="true" data-type="sign in"></div>
+<script type="text/javascript">
+  AppleID.auth.init({
+    clientId : 'com.connectly.luxury',
+    scope : 'name email',
+    redirectURI : 'https://312a-211-192-187-70.jp.ngrok.io/api/v1/apple/appleLoginCallBack',
+    state : 'test',
+    nonce : '[NONCE]',
+    usePopup : false //or false defaults to false
+  });
+
+  document.addEventListener('AppleIDSignInOnSuccess', (data) => {
+    console.log(data);
+    //handle successful response
+  });
+  //Listen for authorization failures
+  document.addEventListener('AppleIDSignInOnFailure', (error) => {
+    console.log(error);
+
+    //handle error.
+  });
+</script>
+</body>
+</html>
+
